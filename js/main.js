@@ -35,3 +35,14 @@ console.log(`Material: ${wardrobe.material}`);
 console.log(`Wardrobe: ${wardrobe}`);
 
 
+//  Square Bracket notation
+
+//  Circling back to lassie above
+
+console.log(`Lassie's breed: ${lassie['breed']}`);
+
+const keyToLookup = 'breed';
+console.log(`key to lookup: ${keyToLookup}`);
+
+const lassiesBreed = lassie[keyToLookup];
+
