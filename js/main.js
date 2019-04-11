@@ -15,7 +15,7 @@ console.log(`Lassie's age is ${lassie.age}`);
 const wardrobe = {
   height: 80,
   manufacturer: 'Killibrew & Sons',
-  contents: ['Dress shirt', 'Jeans', 'Suit','Skirt','Tennis shoes'],
+  contents: ['Dress shirt', 'Jeans', 'Suit', 'Skirt', 'Tennis shoes'],
   depth: 38,
   width: 50
 }
@@ -97,7 +97,7 @@ const boardedAnimals = kennel.currentAnimals;
 
 for (let i = 0; i < boardedAnimals.length; i++) {
   const animal = boardedAnimals[i];
-  console.log(`${animal}`);  
+  console.log(`${animal}`);
 }
 
 // Get a Single animal from array:
@@ -105,3 +105,37 @@ for (let i = 0; i < boardedAnimals.length; i++) {
 console.log(`${kennel.currentAnimals[3]}`);
 
 
+//  lightning exercise 
+
+const nashvilleSoftwareSchool = {
+  founded: 2012,
+  director: "John Wark",
+  instructors: {
+    fullTime: ["Jisie", "Brenda", "Steve", "Joe", "Andy"],
+    partTime: ["Zoe", "Nathan"]
+  },
+  address: "500 Interstate Blvd. S"
+}
+
+// Output names of part time instructors, followed by names of full time instructors to console:
+
+const instructors = nashvilleSoftwareSchool.instructors;
+instructors.partTime.forEach(instructor => {
+  console.log(`Part time Instructor:  ${instructor}`);
+});
+instructors.fullTime.forEach(instructor => {
+  console.log(`Full Time Instructor: ${instructor}`);
+})
+
+
+//  Exercise 2:  Output only Andy and Zoe in the console
+
+console.log(`Find Andy: ${instructors.fullTime.find(instructor => {
+  return instructor === 'Andy';
+  })
+}`);
+
+console.log(`Find Zoe: ${instructors.partTime.find(instructor => {
+  return instructor === 'Zoe';
+  })
+}`);
