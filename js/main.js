@@ -21,8 +21,17 @@ const wardrobe = {
 }
 
 console.log(`height: ${wardrobe.height}`);
-console.log(`manufacturer: ${wardrobe.manufacturer}`);
-console.log(`contents: ${wardrobe.contents}`);
-console.log(`depth: ${wardrobe.depth}`);
-console.log(`width: ${wardrobe.width}`);
+console.log(`Manufacturer: ${wardrobe.manufacturer}`);
+console.log(`Contents: ${wardrobe.contents}`);
+console.log(`Depth: ${wardrobe.depth}`);
+console.log(`Width: ${wardrobe.width}`);
+
+//  Add new key to object using dot notation
+
+wardrobe.material = "Cedar";
+
+console.log(`Material: ${wardrobe.material}`);
+
+console.log(`Wardrobe: ${wardrobe}`);
+
 
