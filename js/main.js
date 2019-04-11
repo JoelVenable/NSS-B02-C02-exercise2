@@ -78,3 +78,30 @@ console.log(`Construction Date: ${empireStateBuilding['constructionDate']}`);
 console.log(`cost: ${empireStateBuilding['cost']}`);
 console.log(`owner: ${empireStateBuilding['owner']}`);
 console.log(`Architect: ${empireStateBuilding['architect']}`);
+
+
+
+//  Arrays as Values
+
+const kennel = {
+  name: "Nashville North Kennels",
+  address: "100 Demonbreun Road",
+  manager: "Harper Frankstone",
+  capacity: 50,
+  currentAnimals: ["Jet", "Snickers", "Blue", "Jacks", "Flap", "Barnum"]
+}
+
+// If you want all the animals currently being boarded, you have to access the array first:
+
+const boardedAnimals = kennel.currentAnimals;
+
+for (let i = 0; i < boardedAnimals.length; i++) {
+  const animal = boardedAnimals[i];
+  console.log(`${animal}`);  
+}
+
+// Get a Single animal from array:
+
+console.log(`${kennel.currentAnimals[3]}`);
+
+
